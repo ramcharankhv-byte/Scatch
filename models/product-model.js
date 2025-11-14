@@ -8,11 +8,11 @@ const productSchema = mongoose.Schema({
     default:0
   },
   price: Number,
-  image: String,
+  image: Buffer,
   bgcolor: String,
   panelcolor: String,
   textcolor: String
 
 })
  
-module.export= mongoose.model("product",productSchema);
+module.exports = mongoose.model("product",productSchema);
